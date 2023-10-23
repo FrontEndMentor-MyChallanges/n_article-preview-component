@@ -4,28 +4,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | Article preview component</title>
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./dist/style.css">
+
+  <script src="https://kit.fontawesome.com/fb401d652e.js" crossorigin="anonymous" defer></script>
+  <script src="./src/script.js" defer></script>
 </head>
 
-<body>
+<body
+  class="font-manrope min-h-screen h-full w-full flex flex-col items-center justify-center bg-customLightGrayishBlue">
+  <div class="wrapper bg-white mx-6 rounded-xl overflow-hidden">
+    <div class="img-container w-full h-[230px]">
+      <img src="./images/drawers.jpg" alt="green drawers" class="article-img w-full h-full object-cover">
+    </div>
 
-  Shift the overall look and feel by adding these wonderful
-  touches to furniture in your home
+    <div class="article px-6 pt-8">
+      <h1 class="text-[15px]] font-bold text-customDarkGrayishBlue leading-relaxed">Shift the overall look and feel by
+        adding these
+        wonderful
+        touches to furniture in your home</h1>
 
-  Ever been in a room and felt like something was missing? Perhaps
-  it felt slightly bare and uninviting. I’ve got some simple tips
-  to help you make any room feel complete.
+      <p class="text-[14px] leading-relaxed text-customDarkBlue mt-3">Ever been in a room and felt like something was
+        missing? Perhaps
+        it felt slightly bare and uninviting. I’ve got some simple tips
+        to help you make any room feel complete.</p>
 
-  Michelle Appleton
-  28 Jun 2020
+      <div class="author-container mt-8 mb-4 ">
+        <div class="author flex items-center">
+          <img src="./images/avatar-michelle.jpg" alt="Michelle Appleton picture" class="w-12 h-12 rounded-full">
+          <div class="author-data ml-5 text-[13px]">
+            <p class="text-customDarkGrayishBlue font-bold">Michelle Appleton</p>
+            <p class="text-customDarkBlue">28 Jun 2020</p>
+          </div>
+          <div class="w-10 h-10 bg-customLightGrayishBlue rounded-full flex items-center justify-center ml-auto"><i
+              class="fa-solid fa-share text-customDarkBlue"></i>
+          </div>
+        </div>
+        <div class="socials hidden ">
+          <p>Share</p>
+        </div>
+      </div>
 
-  Share
+    </div>
+  </div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
