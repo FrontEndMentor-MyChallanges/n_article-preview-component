@@ -1,0 +1,15 @@
+{
+	"name": "n_article-preview-component",
+	"version": "1.0.0",
+	"description": "![Design preview for the Article preview component coding challenge](./design/desktop-preview.jpg)",
+	"main": "src/script.js",
+	"scripts": {
+		"start": "npx -i .src/tailwind.css -o ./dist/style.css --watch",
+		"prod": "npx -i .src/tailwind.css -o ./dist/style.css --minify"
+	},
+	"author": "Mirosław Mroczkowski",
+	"license": "ISC",
+	"devDependencies": {
+		"tailwindcss": "^3.3.3"
+	}
+}
