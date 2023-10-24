@@ -4,6 +4,7 @@ const btnAuthor = document.querySelector('.button-author');
 const btnSocials = document.querySelector('.button-socials');
 const socials = document.querySelector('.socials');
 const tooltip = document.querySelector('.tooltip');
+const arrowAuth = document.querySelector('.arrow-author').closest('.button-author');
 
 // Show/hide socials on mobile
 btnAuthor.addEventListener('click', function () {
@@ -29,14 +30,33 @@ window.addEventListener('resize', function (e) {
 });
 
 // Show/hide tooltip
-btnAuthor.addEventListener('mouseenter', function () {
-	tooltip.classList.remove('hidden');
-	tooltip.classList.add('flex');
+// btnAuthor.addEventListener('click', function () {
+// 	tooltip.classList.remove('hidden');
+// 	tooltip.classList.add('flex');
+// });
+
+let isTooltip = false;
+
+// arrowAuth.addEventListener('click', function (e) {
+// const clicked = e.target.closest('.button-author');
+// 	console.log(e.target);
+// 	if (!isTooltip) {
+// 		tooltip.classList.remove('hidden');
+// 		tooltip.classList.add('flex');
+// 		isTooltip = true;
+// 	}
+// });
+
+arrowAuth.addEventListener('click', function (e) {
+	tooltip.classList.toggle('hidden');
+	tooltip.classList.toggle('flex');
+	tooltip.classList.contains('flex') ? (isTooltip = true) : (isTooltip = false);
 });
 
 document.addEventListener('click', function (e) {
 	const clicked = e.target;
-	if (e.target.classList.contains('icon') || !clicked.closest('.tooltip')) {
+
+	if (isTooltip && clicked.classList.contains('icon')) {
 		tooltip.classList.remove('flex');
 		tooltip.classList.add('hidden');
 	}
