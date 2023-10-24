@@ -29,7 +29,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/desktop.png)
+![](./images/desktop_active.png)
+![](./images/mobile.png)
+![](./images/mobile_active.png)
 
 ### Links
 
@@ -43,7 +46,6 @@ Users should be able to:
 - Semantic HTML5 markup
 - Tailwind CSS
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 
 ## Author

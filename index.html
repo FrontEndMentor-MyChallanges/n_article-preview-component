@@ -21,46 +21,90 @@
 </head>
 
 <body
-  class="font-manrope min-h-screen h-full w-full flex flex-col items-center justify-center bg-customLightGrayishBlue">
-  <div class="wrapper bg-white mx-6 rounded-xl overflow-hidden">
-    <div class="img-container w-full h-[230px]">
-      <img src="./images/drawers.jpg" alt="green drawers" class="article-img w-full h-full object-cover">
+  class="font-manrope bg-customLightGrayishBlue flex flex-col items-center justify-center w-full h-full min-h-screen">
+  <div class="wrapper rounded-xl max-w-[375px] md:flex md:max-w-3xl mx-6 md:mx-8  bg-white h-full">
+    <div class="img-container w-full h-[230px] md:h-auto md:w-full ">
+      <img src="./images/drawers.jpg" alt="green drawers"
+        class="article-img rounded-t-xl md:rounded-l-xl md:rounded-tr-none object-cover object-left w-full h-full">
     </div>
 
-    <div class="article px-6 pt-8">
-      <h1 class="text-[15px]] font-bold text-customDarkGrayishBlue leading-relaxed">Shift the overall look and feel by
+    <div class="article md:pb-3 pt-8">
+      <h1 class="text-[16px] font-bold text-customDarkGrayishBlue leading-relaxed px-8 md:px-10 md:text-xl">Shift the
+        overall look
+        and feel
+        by
         adding these
         wonderful
         touches to furniture in your home</h1>
 
-      <p class="text-[14px] leading-relaxed text-customDarkBlue mt-3">Ever been in a room and felt like something was
-        missing? Perhaps
+      <p class="text-[13px] leading-relaxed text-customDarkBlue mt-3 px-8 md:px-10">Ever been in a room and felt like
+        something
+        was
+        missing? Perhapss
         it felt slightly bare and uninviting. I’ve got some simple tips
         to help you make any room feel complete.</p>
 
-      <div class="author-container mt-8 mb-4 ">
-        <div class="author flex items-center">
+      <div class="author-container md:mt-6 relative mt-8">
+        <div class="author md:px-10 md:pr-12 flex items-center px-8 pb-4">
           <img src="./images/avatar-michelle.jpg" alt="Michelle Appleton picture" class="w-12 h-12 rounded-full">
-          <div class="author-data ml-5 text-[13px]">
+          <div class="author-data ml-5 text-[13px] mt-2">
             <p class="text-customDarkGrayishBlue font-bold">Michelle Appleton</p>
             <p class="text-customDarkBlue">28 Jun 2020</p>
           </div>
-          <div class="w-10 h-10 bg-customLightGrayishBlue rounded-full flex items-center justify-center ml-auto"><i
-              class="fa-solid fa-share text-customDarkBlue"></i>
-          </div>
+          <button
+            class="bg-customLightGrayishBlue hover:cursor-pointer button-author relative flex items-center justify-center w-8 h-8 mt-3 ml-auto rounded-full">
+            <i class="fa-solid fa-share text-customDarkBlue"></i>
+            <div
+              class="tooltip bg-customDarkGrayishBlue hidden px-9 z-100 bottom-[200%] absolute items-center py-3 mt-10 rounded-lg cursor-default after:absolute after:content-[''] after:w-0 after:h-0 after:block after:border after:border-l-[12px] after:border-l-transparent after:border-r-[12px] after:border-r-transparent after:border-t-[12px] after:border-t-customDarkGrayishBlue after:bottom-[-12px] after:left-1/2 after:-translate-x-1/2 ">
+              <p class="uppercase text-[13px] tracking-[0.3em] text-customGrayishBlue font-normal mr-5">Share</p>
+              <div class="social-icons flex gap-4 text-xl text-white">
+                <a href='https://www.facebook.com/' target="_blank" class="icon-link hover:cursor-pointer"><i
+                    class="icon fa-brands fa-square-facebook"></i></a>
+                <a href='https://twitter.com/' target="_blank" class="icon-link hover:cursor-pointer"><i
+                    class="icon fa-brands fa-twitter"></i></a>
+                <a href="https://pinterest.com/" target="_blank" class="icon-link hover:cursor-pointer"><i
+                    class="icon fa-brands fa-pinterest"></i></a>
+              </div>
+            </div>
+          </button>
         </div>
-        <div class="socials hidden ">
-          <p>Share</p>
+        <div
+          class="socials bg-customDarkGrayishBlue px-7 rounded-b-xl absolute top-0 left-0 z-10 items-center hidden w-full h-full">
+          <p class="uppercase text-[13px] tracking-[0.3em] text-customGrayishBlue font-normal mr-5 mt-[-2px]">Share</p>
+          <div class="social-icons flex gap-4 text-xl text-white">
+            <a href='https://www.facebook.com/' target="_blank" class="icon-link hover:cursor-pointer"><i
+                class=" fa-brands fa-square-facebook"></i></a>
+            <a href='https://twitter.com/' target="_blank" class="icon-link hover:cursor-pointer"><i
+                class="fa-brands fa-twitter"></i></a>
+            <a href="https://pinterest.com/" target="_blank" class="icon-link hover:cursor-pointer"><i
+                class="fa-brands fa-pinterest"></i></a>
+          </div>
+
+          <button
+            class="bg-customDarkBlue hover:cursor-pointer button-socials flex items-center justify-center w-8 h-8 ml-auto rounded-full">
+            <i class="fa-solid fa-share text-white"></i>
+          </button>
         </div>
       </div>
-
     </div>
   </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="attribution mt-10 text-center">
+    <p class="text-customDarkGrayishBlue">
+      Challenge by
+      <a href="https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT" target="_blank"
+        class="text-customGrayishBlue hover:underline hover:underline-offset-2 visited:text-customDarkBlue">Frontend
+        Mentor</a>
+    </p>
+    <p class="text-customDarkGrayishBlue"> Coded by
+      <a href="https://www.frontendmentor.io/profile/miroslaw-mroczkowski" target="_blank"
+        class="text-customGrayishBlue hover:underline hover:underline-offset-2 visited:text-customDarkBlue">Mirosław
+        Mroczkowski</a>
+    </p>
   </div>
+
+
+
 </body>
 
 </html>
